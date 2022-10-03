@@ -440,7 +440,7 @@ textarea {
   padding: 10px;
   font-size: 0.8125rem;
   font-family: "Pathway Gothic One", sans-serif;
-  cursor: grab;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   #hero aside button {

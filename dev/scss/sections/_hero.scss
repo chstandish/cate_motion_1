@@ -72,7 +72,7 @@
             padding: 10px;
             font-size: rem-calc(13);
             font-family: 'Pathway Gothic One', sans-serif;
-            cursor: grab;
+            cursor: pointer;
 
             @include md {
                 font-size: rem-calc(20);
