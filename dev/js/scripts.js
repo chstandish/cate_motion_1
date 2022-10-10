@@ -1,6 +1,5 @@
 import { gsap } from "gsap";
 
-gsap.set("form",{scaleX: 0, transformOrigin:"left center"});
 
 var mainTL = gsap.timeline();
 mainTL.add(buttonsEnter());
@@ -19,6 +18,27 @@ function buttonsEnter(){
     .from("#shows-btn",{duration:0.5, alpha:0, y:50});
     return tl;
 }
+
+
+// var buttonArray = [meetBtn, listenBtn,showsBtn];
+
+// var meetButtonAnimation = gsap.timeline({paused:true});
+
+
+// for( var i = 0; i < buttonArray.length; i++) {
+//     console.log(i);
+
+//     meetButtonAnimation.to(buttonArray[i], {duration:0.25, scale:1.25, backgroundColor:"var(--white)"});
+
+//     buttonArray[i].addEventListener("mouseover",function(){
+//         console.log("hello");
+//         meetButtonAnimation.play();
+//     });
+// }
+
+
+
+
 
 var meetButtonAnimation = gsap.timeline({paused:true});
 meetButtonAnimation.to("#meet-btn", {duration:0.25, scale:1.25, backgroundColor:"var(--white)"});
