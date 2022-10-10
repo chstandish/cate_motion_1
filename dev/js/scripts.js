@@ -2,59 +2,47 @@ import { gsap } from "gsap";
 
 gsap.set("form",{scaleX: 0, transformOrigin:"left center"});
 
-gsap.from("#line-1",{
-    duration:2,
-    x:-700,
-    color: 'var(--red)'
-    });
-
-gsap.from("#line-2",{
-    duration:2,
-    x:700,
-    color: 'var(--white)'
-})
+var mainTL = gsap.timeline();
+mainTL.add(buttonsEnter());
 
 let meetBtn = document.querySelector("#meet-btn");
-meetBtn.addEventListener("mouseover",function(){
-    gsap.to("#meet-btn", {
-        duration:0.25, 
-        scale:1.25, 
-        backgroundColor:"var(--white)"});
-})
-
-meetBtn.addEventListener("mouseout",function(){
-    gsap.to("#meet-btn",{
-        duration:0.25,
-        scale:1,
-        backgroundColor:"var(--red)"}); 
-})
-
 let listenBtn = document.querySelector("#listen-btn");
-listenBtn.addEventListener("mouseover",function(){
-    gsap.to("#listen-btn", {
-        duration:0.25, 
-        scale:1.25, 
-        backgroundColor:"var(--white)"});
-})
-
-listenBtn.addEventListener("mouseout",function(){
-    gsap.to("#listen-btn",{
-        duration:0.25,
-        scale:1,
-        backgroundColor:"var(--red)"}); 
-})
-
 let showsBtn = document.querySelector("#shows-btn");
-showsBtn.addEventListener("mouseover",function(){
-    gsap.to("#shows-btn", {
-        duration:0.25, 
-        scale:1.25, 
-        backgroundColor:"var(--white)"});
-})
 
+gsap.from("#line-1",{duration:1, x:-300, color: 'var(--red)'});
+gsap.from("#line-2",{duration:1, x:500, color: 'var(--white)'});
+
+function buttonsEnter(){
+    var tl = gsap.timeline();
+    tl.from("#meet-btn",{duration:0.5, alpha:0, y:50, delay:1})
+    .from("#listen-btn",{duration:0.5, alpha:0, y:50})
+    .from("#shows-btn",{duration:0.5, alpha:0, y:50});
+    return tl;
+}
+
+var meetButtonAnimation = gsap.timeline({paused:true});
+meetButtonAnimation.to("#meet-btn", {duration:0.25, scale:1.25, backgroundColor:"var(--white)"});
+meetBtn.addEventListener("mouseover",function(){
+    meetButtonAnimation.play();
+});
+meetBtn.addEventListener("mouseout",function(){
+    meetButtonAnimation.reverse();
+});
+
+var listenButtonAnimation = gsap.timeline({paused:true});
+listenButtonAnimation.to("#listen-btn", {duration:0.25, scale:1.25, backgroundColor:"var(--white)"});
+listenBtn.addEventListener("mouseover",function(){
+    listenButtonAnimation.play();
+});
+listenBtn.addEventListener("mouseout",function(){
+    listenButtonAnimation.reverse();
+});
+
+var showsButtonAnimation = gsap.timeline({paused:true});
+showsButtonAnimation.to("#shows-btn", {duration:0.25, scale:1.25, backgroundColor:"var(--white)"});
+showsBtn.addEventListener("mouseover",function(){
+    showsButtonAnimation.play();
+});
 showsBtn.addEventListener("mouseout",function(){
-    gsap.to("#shows-btn",{
-        duration:0.25,
-        scale:1,
-        backgroundColor:"var(--red)"}); 
-})
+    showsButtonAnimation.reverse();
+});
