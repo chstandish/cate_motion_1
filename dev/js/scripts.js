@@ -19,6 +19,17 @@ function buttonsEnter(){
     return tl;
 }
 
+let mm = gsap.matchMedia();
+
+var buttonSize = 1;
+
+mm.add("(min-width: 800px)",() => {
+    buttonSize = 1.25;
+});
+
+mm.add("(max-width: 799px)",() => {
+    buttonSize = 1.25;
+});
 
 // var buttonArray = [meetBtn, listenBtn,showsBtn];
 
@@ -35,13 +46,8 @@ function buttonsEnter(){
 //         meetButtonAnimation.play();
 //     });
 // }
-
-
-
-
-
 var meetButtonAnimation = gsap.timeline({paused:true});
-meetButtonAnimation.to("#meet-btn", {duration:0.25, scale:1.25, backgroundColor:"var(--white)"});
+meetButtonAnimation.to("#meet-btn", {duration:0.25, scale: buttonSize, backgroundColor:"var(--white)"});
 meetBtn.addEventListener("mouseover",function(){
     meetButtonAnimation.play();
 });
@@ -50,7 +56,7 @@ meetBtn.addEventListener("mouseout",function(){
 });
 
 var listenButtonAnimation = gsap.timeline({paused:true});
-listenButtonAnimation.to("#listen-btn", {duration:0.25, scale:1.25, backgroundColor:"var(--white)"});
+listenButtonAnimation.to("#listen-btn", {duration:0.25, scale: buttonSize, backgroundColor:"var(--white)"});
 listenBtn.addEventListener("mouseover",function(){
     listenButtonAnimation.play();
 });
@@ -59,7 +65,7 @@ listenBtn.addEventListener("mouseout",function(){
 });
 
 var showsButtonAnimation = gsap.timeline({paused:true});
-showsButtonAnimation.to("#shows-btn", {duration:0.25, scale:1.25, backgroundColor:"var(--white)"});
+showsButtonAnimation.to("#shows-btn", {duration:0.25, scale:buttonSize, backgroundColor:"var(--white)"});
 showsBtn.addEventListener("mouseover",function(){
     showsButtonAnimation.play();
 });
