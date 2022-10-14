@@ -1,7 +1,4 @@
 #hero-2{
-    background-image: url("../img/heroes/hero-2.jpg");
-    background-size: cover;
-    background-position: bottom;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -26,7 +23,16 @@
         }
     }
 
-
+#bg-img{
+    background-image: url("../img/heroes/hero-2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    // clip-path: inset(10% 30% 5% 10%);
+}
 
 
 }
