@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function mythAnimation(){
     var tl = gsap.timeline();
-    tl.to("#hekate", {duration:1, x:500})
+    tl.from("#hekate", {duration:1, x:-500})
     return tl;
 }
 
