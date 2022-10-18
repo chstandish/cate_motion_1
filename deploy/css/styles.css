@@ -363,106 +363,189 @@ textarea {
 /* =============
     Navigation
 ============= */
-#nav-cont ul {
-  height: 100%;
-}
-@media (min-width: 1024px) {
-  #nav-cont ul {
-    display: flex;
-  }
-}
-#nav-cont ul li {
-  margin-bottom: 20px;
-}
-@media (min-width: 1024px) {
-  #nav-cont ul li {
-    align-items: center;
-    border-right: 2px solid #fff;
-    display: flex;
-    margin-bottom: 0px;
-  }
-}
-#nav-cont ul li a:link,
-#nav-cont ul li a:visited {
-  color: #000;
-  font-family: "Raleway", sans-serif;
-  padding: 0 20px;
-  text-decoration: none;
-  transition: 0.25s;
-}
-@media (min-width: 1024px) {
-  #nav-cont ul li a:link,
-#nav-cont ul li a:visited {
-    color: #e0ac28;
-  }
-}
-#nav-cont ul li a:link:hover, #nav-cont ul li a:link:active,
-#nav-cont ul li a:visited:hover,
-#nav-cont ul li a:visited:active {
-  color: #5685d1;
-}
-#nav-cont ul li:first-child {
-  border: none;
-  display: none;
-}
-@media (min-width: 768px) {
-  #nav-cont ul li:first-child {
-    display: list-item;
-  }
-}
-#nav-cont ul li:last-child {
-  border: none;
-}
-
 /* =============
     Header
 ============= */
-header {
-  background-color: #5685d1;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-header > div {
-  display: grid;
-  grid-template-areas: "burger survival" "nav nav";
-  grid-template-columns: 20% auto;
-}
-@media (min-width: 1024px) {
-  header > div {
-    grid-template-areas: "nav survival";
-    grid-template-columns: 20% auto;
-  }
-}
-header > div #burger-cont {
-  align-items: center;
-  display: flex;
-  grid-area: burger;
-  padding: 10px;
-}
-@media (min-width: 1024px) {
-  header > div #burger-cont {
-    display: none !important;
-  }
-}
-header > div #burger-cont i {
-  cursor: pointer;
-  font-size: 1.875rem;
-}
-header > div #nav-cont {
-  background-color: #e0ac28;
-  display: none;
-  grid-area: nav;
-  padding: 20px 10px 20px;
-}
-@media (min-width: 1024px) {
-  header > div #nav-cont {
-    background-color: #fff;
-    display: block !important;
-  }
-}
-
 /* =============
     Footer
 ============= */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#about-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+@media (min-width: 768px) {
+  #about-content {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  #about-content {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+}
+#about-content h1 {
+  color: #021c45;
+  font-size: 2.1875rem;
+}
+@media (min-width: 768px) {
+  #about-content h1 {
+    font-size: 2.8125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #about-content h1 {
+    font-size: 3.4375rem;
+  }
+}
+#about-content h3 {
+  color: #5685d1;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  #about-content h3 {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  #about-content h3 {
+    font-size: 2.5rem;
+  }
+}
+#about-content h5 {
+  color: #deaa83;
+  font-size: 0.9375rem;
+}
+@media (min-width: 768px) {
+  #about-content h5 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  #about-content h5 {
+    font-size: 1.5625rem;
+  }
+}
+
+#hero-2 {
+  background-image: url("../img/hekate.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #hero-2 {
+    height: 375px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero-2 {
+    height: 475px;
+  }
+}
+
+#hero {
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 375px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero {
+    height: 475px;
+  }
+}
+
+#myth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#myth-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#myth-title h1 {
+  color: #021c45;
+  font-size: 2.1875rem;
+}
+@media (min-width: 768px) {
+  #myth-title h1 {
+    font-size: 2.8125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #myth-title h1 {
+    font-size: 3.4375rem;
+  }
+}
+#myth-title h3 {
+  color: #5685d1;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  #myth-title h3 {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  #myth-title h3 {
+    font-size: 2.5rem;
+  }
+}
+
+#myth-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+@media (min-width: 768px) {
+  #myth-content {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  #myth-content {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+}
+#myth-content p {
+  color: #6e4222;
+  font-size: 0.9375rem;
+}
+@media (min-width: 768px) {
+  #myth-content p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  #myth-content p {
+    font-size: 1.5625rem;
+  }
+}

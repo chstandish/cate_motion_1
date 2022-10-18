@@ -1,0 +1,68 @@
+#myth{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#myth-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    h1 {
+        color: $blue-dark;
+        font-size: rem-calc(35);
+
+        @include md{
+            font-size: rem-calc(45);
+        }
+    
+        @include lg{
+            font-size: rem-calc(55);
+        }
+    }
+    h3{
+        color: $blue;
+        font-size: rem-calc(20);
+
+        @include md{
+            font-size: rem-calc(30);
+        }
+    
+        @include lg{
+            font-size: rem-calc(40);
+        }
+    }
+}
+
+#myth-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+    padding-left: 35px;
+
+    @include md {
+        padding-right: 100px;
+    padding-left: 100px;
+    }
+
+    @include lg {
+        padding-right: 200px;
+    padding-left: 200px;
+    }
+
+    p{
+        color: $tan-dark;
+        font-size: rem-calc(15);
+
+        @include md{
+            font-size: rem-calc(20);
+        }
+    
+        @include lg{
+            font-size: rem-calc(25);
+        }
+    }
+}
