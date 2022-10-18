@@ -1,7 +1,7 @@
 #about {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
     text-align: center;
     padding-left: 50px;
@@ -10,7 +10,6 @@
 
 #about-content {
     padding-top: 10px;
-    padding-bottom: 10px;
     padding-right: 35px;
     padding-left: 35px;
 
@@ -25,6 +24,7 @@
     }
 
     h1 {
+        font-weight: 500;
         color: $blue-dark;
         font-size: rem-calc(35);
 
@@ -37,6 +37,7 @@
         }
     }
     h3{
+        font-weight: 400;
         color: $blue;
         font-size: rem-calc(20);
 
@@ -49,6 +50,7 @@
         }
     }
     h5{
+        font-weight: 300;
         color: $tan-dark;
         font-size: rem-calc(15);
 

@@ -366,13 +366,108 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #deaa83;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header #title h1 {
+  font-weight: 500;
+  color: #021c45;
+  font-size: 2.1875rem;
+}
+@media (min-width: 768px) {
+  header #title h1 {
+    font-size: 2.8125rem;
+  }
+}
+@media (min-width: 1024px) {
+  header #title h1 {
+    font-size: 3.4375rem;
+  }
+}
+header #nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header #nav h3 {
+  font-weight: 400;
+  color: #5685d1;
+  font-size: 0.9375rem;
+}
+@media (min-width: 768px) {
+  header #nav h3 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  header #nav h3 {
+    font-size: 1.5625rem;
+  }
+}
+header #nav #myth {
+  border-left: 2px solid #5685d1;
+  border-right: 2px solid #5685d1;
+}
+header #nav #explore {
+  padding: 0px 50px;
+  border-right: 2px solid #5685d1;
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #5685d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+footer > div h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.875rem;
+}
+footer > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+footer > section a:link,
+footer > section a:visited {
+  color: #fff;
+}
+footer > section i {
+  width: 30px;
+  height: 30px;
+}
+
 #about {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   text-align: center;
   padding-left: 50px;
@@ -381,7 +476,6 @@ textarea {
 
 #about-content {
   padding-top: 10px;
-  padding-bottom: 10px;
   padding-right: 35px;
   padding-left: 35px;
 }
@@ -398,6 +492,7 @@ textarea {
   }
 }
 #about-content h1 {
+  font-weight: 500;
   color: #021c45;
   font-size: 2.1875rem;
 }
@@ -412,6 +507,7 @@ textarea {
   }
 }
 #about-content h3 {
+  font-weight: 400;
   color: #5685d1;
   font-size: 1.25rem;
 }
@@ -426,6 +522,7 @@ textarea {
   }
 }
 #about-content h5 {
+  font-weight: 300;
   color: #6e4222;
   font-size: 0.9375rem;
 }
@@ -445,16 +542,6 @@ textarea {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". gallery .";
 }
-@media (min-width: 768px) {
-  #gallery {
-    padding: 54px 0;
-  }
-}
-@media (min-width: 1024px) {
-  #gallery {
-    padding: 100px 0;
-  }
-}
 @media (min-width: 1200px) {
   #gallery {
     grid-template-columns: auto 1200px auto;
@@ -462,6 +549,22 @@ textarea {
 }
 #gallery > div {
   grid-area: gallery;
+}
+#gallery > div h1 {
+  font-weight: 400;
+  color: #deaa83;
+  font-size: 2.1875rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #gallery > div h1 {
+    font-size: 2.8125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery > div h1 {
+    font-size: 3.4375rem;
+  }
 }
 #gallery > div ul {
   display: grid;
@@ -690,16 +793,11 @@ textarea {
   background-image: url("../img/hekate.jpg");
   background-position: center;
   background-size: cover;
-  height: 300px;
-}
-@media (min-width: 768px) {
-  #hero-2 {
-    height: 375px;
-  }
+  height: 50vh;
 }
 @media (min-width: 1024px) {
   #hero-2 {
-    height: 475px;
+    height: 75vh;
   }
 }
 
@@ -707,17 +805,7 @@ textarea {
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 300px;
-}
-@media (min-width: 768px) {
-  #hero {
-    height: 375px;
-  }
-}
-@media (min-width: 1024px) {
-  #hero {
-    height: 475px;
-  }
+  height: 75vh;
 }
 
 #myth {
@@ -735,6 +823,7 @@ textarea {
   padding-bottom: 10px;
 }
 #myth-title h1 {
+  font-weight: 500;
   color: #021c45;
   font-size: 2.1875rem;
 }
@@ -749,6 +838,7 @@ textarea {
   }
 }
 #myth-title h3 {
+  font-weight: 400;
   color: #5685d1;
   font-size: 1.25rem;
 }

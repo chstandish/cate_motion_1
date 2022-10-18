@@ -2,13 +2,8 @@
     background-image: url('../img/hekate.jpg');
         background-position: center;
         background-size: cover;
-        height: 300px;
-
-        @include md{
-        height: 375px;
-        }
-
+        height: 50vh;
         @include lg{
-        height: 475px;
+            height: 75vh;
         }
 }
