@@ -426,7 +426,7 @@ textarea {
   }
 }
 #about-content h5 {
-  color: #deaa83;
+  color: #6e4222;
   font-size: 0.9375rem;
 }
 @media (min-width: 768px) {
@@ -438,6 +438,252 @@ textarea {
   #about-content h5 {
     font-size: 1.5625rem;
   }
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". gallery .";
+}
+@media (min-width: 768px) {
+  #gallery {
+    padding: 54px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery {
+    padding: 100px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #gallery {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#gallery > div {
+  grid-area: gallery;
+}
+#gallery > div ul {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "gallery-1" "gallery-2" "gallery-3" "gallery-4" "gallery-5" "gallery-6" "gallery-7";
+  grid-template-rows: repeat(7, 1fr);
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #gallery > div ul {
+    grid-template-areas: "gallery-1 gallery-2 gallery-3" "gallery-4 gallery-5 gallery-3" "gallery-4 gallery-6 gallery-7";
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+  }
+}
+@media (min-width: 1024px) {
+  #gallery > div ul {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+  }
+}
+#gallery > div ul li {
+  background-position: center;
+  background-size: cover;
+}
+#gallery > div ul #gallery-1 {
+  background-image: url("../img/olympians.jpg");
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  grid-area: gallery-1;
+  width: 450px;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-1 {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery > div ul #gallery-1 {
+    width: 300px;
+    height: 300px;
+  }
+}
+#gallery > div ul #gallery-1 h2 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-align: center;
+}
+#gallery > div ul #gallery-2 {
+  background-image: url("../img/heroes.jpg");
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  grid-area: gallery-2;
+  width: 450px;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-2 {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery > div ul #gallery-2 {
+    width: 300px;
+    height: 300px;
+  }
+}
+#gallery > div ul #gallery-2 h2 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-align: center;
+}
+#gallery > div ul #gallery-3 {
+  background-image: url("../img/titans.jpg");
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  grid-area: gallery-3;
+  width: 450px;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-3 {
+    width: 200px;
+    height: 420px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery > div ul #gallery-3 {
+    width: 300px;
+    height: 620px;
+  }
+}
+#gallery > div ul #gallery-3 h2 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-align: center;
+}
+#gallery > div ul #gallery-4 {
+  background-image: url("../img/other-gods.jpg");
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  grid-area: gallery-4;
+  width: 450px;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-4 {
+    width: 200px;
+    height: 420px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery > div ul #gallery-4 {
+    width: 300px;
+    height: 620px;
+  }
+}
+#gallery > div ul #gallery-4 h2 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-align: center;
+}
+#gallery > div ul #gallery-5 {
+  background-image: url("../img/primordial-deities.jpg");
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  grid-area: gallery-5;
+  width: 450px;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-5 {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery > div ul #gallery-5 {
+    width: 300px;
+    height: 300px;
+  }
+}
+#gallery > div ul #gallery-5 h2 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-align: center;
+}
+#gallery > div ul #gallery-6 {
+  background-image: url("../img/nymphs-and-satyrs.jpg");
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  grid-area: gallery-6;
+  width: 450px;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-6 {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery > div ul #gallery-6 {
+    width: 300px;
+    height: 300px;
+  }
+}
+#gallery > div ul #gallery-6 h2 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-align: center;
+}
+#gallery > div ul #gallery-7 {
+  background-image: url("../img/giants.jpg");
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  grid-area: gallery-7;
+  width: 450px;
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-7 {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery > div ul #gallery-7 {
+    width: 300px;
+    height: 300px;
+  }
+}
+#gallery > div ul #gallery-7 h2 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-align: center;
 }
 
 #hero-2 {
