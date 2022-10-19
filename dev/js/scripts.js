@@ -10,12 +10,12 @@ function mythAnimation(){
     return tl;
 }
 
-function imageAnimation(){
+function heroTwoAnimation(){
     var tl = gsap.timeline();
     tl.from("#hero-2", {duration:3, clipPath:"inset(0 50%)"})
 }
 
 var mainTimeline = gsap.timeline();
 mainTimeline.add(mythAnimation())
-.add(imageAnimation());
+.add(heroTwoAnimation());
 
