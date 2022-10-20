@@ -376,7 +376,6 @@ header {
   justify-content: center;
   left: 0;
   top: 0;
-  width: 100%;
 }
 header #title h1 {
   font-weight: 500;
@@ -415,12 +414,12 @@ header #nav h3 {
   }
 }
 header #nav #header-myth {
-  padding: 0px 50px;
+  padding: 0px 25px;
   border-left: 2px solid #5685d1;
   border-right: 2px solid #5685d1;
 }
 header #nav #explore {
-  padding: 0px 50px;
+  padding: 0px 25px;
   border-right: 2px solid #5685d1;
 }
 
@@ -467,7 +466,7 @@ footer > section i {
 #hero {
   background-image: url("../img/hero.jpg");
   background-position: center;
-  background-size: cover;
+  width: auto;
   height: 95vh;
 }
 
@@ -525,8 +524,8 @@ footer > section i {
 #myth #myth-content {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 @media (min-width: 768px) {
   #myth #myth-content {
@@ -645,6 +644,7 @@ footer > section i {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". gallery .";
+  width: 100%;
 }
 @media (min-width: 1200px) {
   #gallery {
@@ -673,8 +673,10 @@ footer > section i {
 #gallery > div ul {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "gallery-1" "gallery-2" "gallery-3" "gallery-4" "gallery-5" "gallery-6" "gallery-7";
-  grid-template-rows: repeat(7, 1fr);
+  padding: 0%;
+  grid-template-areas: "gallery-1 gallery-2 gallery-3" "gallery-4 gallery-5 gallery-3" "gallery-4 gallery-6 gallery-7";
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -704,8 +706,8 @@ footer > section i {
   justify-content: center;
   cursor: pointer;
   grid-area: gallery-1;
-  width: 450px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-1 {
@@ -720,9 +722,14 @@ footer > section i {
   }
 }
 #gallery > div ul #gallery-1 h2 {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-1 h2 {
+    font-size: 1.875rem;
+  }
 }
 #gallery > div ul #gallery-2 {
   background-image: url("../img/heroes.jpg");
@@ -732,8 +739,8 @@ footer > section i {
   justify-content: center;
   cursor: pointer;
   grid-area: gallery-2;
-  width: 450px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-2 {
@@ -748,9 +755,14 @@ footer > section i {
   }
 }
 #gallery > div ul #gallery-2 h2 {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-2 h2 {
+    font-size: 1.875rem;
+  }
 }
 #gallery > div ul #gallery-3 {
   background-image: url("../img/titans.jpg");
@@ -760,8 +772,8 @@ footer > section i {
   justify-content: center;
   cursor: pointer;
   grid-area: gallery-3;
-  width: 450px;
-  height: 300px;
+  width: 100px;
+  height: 220px;
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-3 {
@@ -776,9 +788,14 @@ footer > section i {
   }
 }
 #gallery > div ul #gallery-3 h2 {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-3 h2 {
+    font-size: 1.875rem;
+  }
 }
 #gallery > div ul #gallery-4 {
   background-image: url("../img/other-gods.jpg");
@@ -788,8 +805,8 @@ footer > section i {
   justify-content: center;
   cursor: pointer;
   grid-area: gallery-4;
-  width: 450px;
-  height: 300px;
+  width: 100px;
+  height: 220px;
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-4 {
@@ -804,9 +821,14 @@ footer > section i {
   }
 }
 #gallery > div ul #gallery-4 h2 {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-4 h2 {
+    font-size: 1.875rem;
+  }
 }
 #gallery > div ul #gallery-5 {
   background-image: url("../img/primordial-deities.jpg");
@@ -816,8 +838,8 @@ footer > section i {
   justify-content: center;
   cursor: pointer;
   grid-area: gallery-5;
-  width: 450px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-5 {
@@ -832,9 +854,14 @@ footer > section i {
   }
 }
 #gallery > div ul #gallery-5 h2 {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-5 h2 {
+    font-size: 1.875rem;
+  }
 }
 #gallery > div ul #gallery-6 {
   background-image: url("../img/nymphs-and-satyrs.jpg");
@@ -844,8 +871,8 @@ footer > section i {
   justify-content: center;
   cursor: pointer;
   grid-area: gallery-6;
-  width: 450px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-6 {
@@ -860,9 +887,14 @@ footer > section i {
   }
 }
 #gallery > div ul #gallery-6 h2 {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-6 h2 {
+    font-size: 1.875rem;
+  }
 }
 #gallery > div ul #gallery-7 {
   background-image: url("../img/giants.jpg");
@@ -872,8 +904,8 @@ footer > section i {
   justify-content: center;
   cursor: pointer;
   grid-area: gallery-7;
-  width: 450px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-7 {
@@ -888,7 +920,12 @@ footer > section i {
   }
 }
 #gallery > div ul #gallery-7 h2 {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #gallery > div ul #gallery-7 h2 {
+    font-size: 1.875rem;
+  }
 }

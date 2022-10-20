@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
+    width: 100%;
 
     @include xl{
         grid-template-columns: auto 1200px auto;
@@ -27,14 +28,12 @@
         ul{
             display: grid;
             grid-gap: 20px;
-            grid-template-areas: "gallery-1"
-                "gallery-2"
-                "gallery-3"
-                "gallery-4"
-                "gallery-5"
-                "gallery-6"
-                "gallery-7";
-            grid-template-rows: repeat(7, 1fr);
+            padding: 0%;
+            grid-template-areas: "gallery-1 gallery-2 gallery-3"
+                "gallery-4 gallery-5 gallery-3"
+                "gallery-4 gallery-6 gallery-7";
+                grid-template-columns: repeat(3, 100px);
+                grid-template-rows: repeat(3, 100px);
             align-content: center;
             align-items: center;
             justify-content: center;
@@ -65,8 +64,8 @@
                 justify-content: center;
                 cursor:pointer;
                 grid-area: gallery-1;
-                width: 450px;
-                height: 300px;
+                width: 100px;
+                height: 100px;
                 @include md{
                     width: 200px;
                     height: 200px;
@@ -77,9 +76,12 @@
                 }
 
                 h2{
-                    font-size: rem-calc(30);
+                    font-size: rem-calc(20);
                     font-weight: 300;
                     text-align: center;
+                    @include md {
+                        font-size: rem-calc(30);
+                    }
                 }
             }
 
@@ -91,8 +93,8 @@
                 justify-content: center;
                 cursor:pointer;
                 grid-area: gallery-2;
-                width: 450px;
-                height: 300px;
+                width: 100px;
+                height: 100px;
                 @include md{
                     width: 200px;
                     height: 200px;
@@ -103,9 +105,12 @@
                 }
 
                 h2{
-                    font-size: rem-calc(30);
+                    font-size: rem-calc(20);
                     font-weight: 300;
                     text-align: center;
+                    @include md {
+                        font-size: rem-calc(30);
+                    }
                 }
             }
 
@@ -117,8 +122,8 @@
                 justify-content: center;
                 cursor:pointer;
                 grid-area: gallery-3;
-                width: 450px;
-                height: 300px;
+                width: 100px;
+                height: 220px;
                 @include md{
                     width: 200px;
                     height: 420px;
@@ -129,9 +134,12 @@
                 }
 
                 h2{
-                    font-size: rem-calc(30);
+                    font-size: rem-calc(20);
                     font-weight: 300;
                     text-align: center;
+                    @include md {
+                        font-size: rem-calc(30);
+                    }
                 }
             }
 
@@ -143,8 +151,8 @@
                 justify-content: center;
                 cursor:pointer;
                 grid-area: gallery-4;
-                width: 450px;
-                height: 300px;
+                width: 100px;
+                height: 220px;
                 @include md{
                     width: 200px;
                     height: 420px;
@@ -155,9 +163,12 @@
                 }
 
                 h2{
-                    font-size: rem-calc(30);
+                    font-size: rem-calc(20);
                     font-weight: 300;
                     text-align: center;
+                    @include md {
+                        font-size: rem-calc(30);
+                    }
                 }
             }
 
@@ -169,8 +180,8 @@
                 justify-content: center;
                 cursor:pointer;
                 grid-area: gallery-5;
-                width: 450px;
-                height: 300px;
+                width: 100px;
+                height: 100px;
                 @include md{
                     width: 200px;
                     height: 200px;
@@ -181,9 +192,12 @@
                 }
 
                 h2{
-                    font-size: rem-calc(30);
+                    font-size: rem-calc(20);
                     font-weight: 300;
                     text-align: center;
+                    @include md {
+                        font-size: rem-calc(30);
+                    }
                 }
             }
 
@@ -195,8 +209,8 @@
                 justify-content: center;
                 cursor:pointer;
                 grid-area: gallery-6;
-                width: 450px;
-                height: 300px;
+                width: 100px;
+                height: 100px;
                 @include md{
                     width: 200px;
                     height: 200px;
@@ -207,9 +221,12 @@
                 }
 
                 h2{
-                    font-size: rem-calc(30);
+                    font-size: rem-calc(20);
                     font-weight: 300;
                     text-align: center;
+                    @include md {
+                        font-size: rem-calc(30);
+                    }
                 }
             }
 
@@ -221,8 +238,8 @@
                 justify-content: center;
                 cursor:pointer;
                 grid-area: gallery-7;
-                width: 450px;
-                height: 300px;
+                width: 100px;
+                height: 100px;
                 @include md{
                     width: 200px;
                     height: 200px;
@@ -233,9 +250,12 @@
                 }
 
                 h2{
-                    font-size: rem-calc(30);
+                    font-size: rem-calc(20);
                     font-weight: 300;
                     text-align: center;
+                    @include md {
+                        font-size: rem-calc(30);
+                    }
                 }
             }
         }
