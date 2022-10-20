@@ -466,7 +466,7 @@ footer > section i {
 #hero {
   background-image: url("../img/hero.jpg");
   background-position: center;
-  width: auto;
+  width: 100%;
   height: 95vh;
 }
 
