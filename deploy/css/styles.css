@@ -417,10 +417,12 @@ header #nav #header-myth {
   padding: 0px 25px;
   border-left: 2px solid #5685d1;
   border-right: 2px solid #5685d1;
+  cursor: pointer;
 }
-header #nav #explore {
+header #nav #header-explore {
   padding: 0px 25px;
   border-right: 2px solid #5685d1;
+  cursor: pointer;
 }
 
 /* =============
