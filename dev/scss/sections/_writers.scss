@@ -1,0 +1,70 @@
+#writers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #writers-head{
+        h1 {
+            font-weight: 400;
+            color: $tan;
+            font-size: rem-calc(35);
+            text-align: center;
+            padding-bottom: 0px;
+    
+            @include md{
+                font-size: rem-calc(45);
+            }
+        
+            @include lg{
+                font-size: rem-calc(55);
+            }
+        }
+    }
+
+    .writer-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+        h2{
+            font-weight: 400;
+            color: $blue;
+            font-size: rem-calc(20);
+    
+            @include md{
+                font-size: rem-calc(30);
+            }
+        
+            @include lg{
+                font-size: rem-calc(40);
+            }
+        }
+
+        .works-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            p{
+                font-weight: 300;
+                color: $tan-dark;
+                font-size: rem-calc(13);
+                padding: 0px 10px;
+                border-left: 1px solid $tan-dark;
+                border-right: 1px solid $tan-dark;
+                cursor: pointer;
+        
+                @include md{
+                    font-size: rem-calc(20);
+                }
+            
+                @include lg{
+                    font-size: rem-calc(25);
+                }
+            }
+        }
+    }
+}

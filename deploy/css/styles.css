@@ -466,6 +466,7 @@ footer > section i {
 #hero {
   background-image: url("../img/hero.jpg");
   background-position: center;
+  background-size: cover;
   width: 100%;
   height: 95vh;
 }
@@ -684,14 +685,14 @@ footer > section i {
 @media (min-width: 768px) {
   #gallery > div ul {
     grid-template-areas: "gallery-1 gallery-2 gallery-3" "gallery-4 gallery-5 gallery-3" "gallery-4 gallery-6 gallery-7";
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 175px);
+    grid-template-rows: repeat(3, 175px);
   }
 }
 @media (min-width: 1024px) {
   #gallery > div ul {
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 250px);
   }
 }
 #gallery > div ul li {
@@ -711,14 +712,14 @@ footer > section i {
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-1 {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
   }
 }
 @media (min-width: 1024px) {
   #gallery > div ul #gallery-1 {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 #gallery > div ul #gallery-1 h2 {
@@ -744,14 +745,14 @@ footer > section i {
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-2 {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
   }
 }
 @media (min-width: 1024px) {
   #gallery > div ul #gallery-2 {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 #gallery > div ul #gallery-2 h2 {
@@ -777,14 +778,14 @@ footer > section i {
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-3 {
-    width: 200px;
-    height: 420px;
+    width: 175px;
+    height: 370px;
   }
 }
 @media (min-width: 1024px) {
   #gallery > div ul #gallery-3 {
-    width: 300px;
-    height: 620px;
+    width: 250px;
+    height: 520px;
   }
 }
 #gallery > div ul #gallery-3 h2 {
@@ -810,14 +811,14 @@ footer > section i {
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-4 {
-    width: 200px;
-    height: 420px;
+    width: 175px;
+    height: 370px;
   }
 }
 @media (min-width: 1024px) {
   #gallery > div ul #gallery-4 {
-    width: 300px;
-    height: 620px;
+    width: 250px;
+    height: 520px;
   }
 }
 #gallery > div ul #gallery-4 h2 {
@@ -843,14 +844,14 @@ footer > section i {
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-5 {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
   }
 }
 @media (min-width: 1024px) {
   #gallery > div ul #gallery-5 {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 #gallery > div ul #gallery-5 h2 {
@@ -876,14 +877,14 @@ footer > section i {
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-6 {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
   }
 }
 @media (min-width: 1024px) {
   #gallery > div ul #gallery-6 {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 #gallery > div ul #gallery-6 h2 {
@@ -909,14 +910,14 @@ footer > section i {
 }
 @media (min-width: 768px) {
   #gallery > div ul #gallery-7 {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
   }
 }
 @media (min-width: 1024px) {
   #gallery > div ul #gallery-7 {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 #gallery > div ul #gallery-7 h2 {
@@ -927,5 +928,76 @@ footer > section i {
 @media (min-width: 768px) {
   #gallery > div ul #gallery-7 h2 {
     font-size: 1.875rem;
+  }
+}
+
+#writers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#writers #writers-head h1 {
+  font-weight: 400;
+  color: #deaa83;
+  font-size: 2.1875rem;
+  text-align: center;
+  padding-bottom: 0px;
+}
+@media (min-width: 768px) {
+  #writers #writers-head h1 {
+    font-size: 2.8125rem;
+  }
+}
+@media (min-width: 1024px) {
+  #writers #writers-head h1 {
+    font-size: 3.4375rem;
+  }
+}
+#writers .writer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+#writers .writer-section h2 {
+  font-weight: 400;
+  color: #5685d1;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  #writers .writer-section h2 {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  #writers .writer-section h2 {
+    font-size: 2.5rem;
+  }
+}
+#writers .writer-section .works-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#writers .writer-section .works-section p {
+  font-weight: 300;
+  color: #6e4222;
+  font-size: 0.8125rem;
+  padding: 0px 10px;
+  border-left: 1px solid #6e4222;
+  border-right: 1px solid #6e4222;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #writers .writer-section .works-section p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  #writers .writer-section .works-section p {
+    font-size: 1.5625rem;
   }
 }

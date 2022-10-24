@@ -42,13 +42,13 @@
                 grid-template-areas: "gallery-1 gallery-2 gallery-3"
                 "gallery-4 gallery-5 gallery-3"
                 "gallery-4 gallery-6 gallery-7";
-                grid-template-columns: repeat(3, 200px);
-                grid-template-rows: repeat(3, 200px);
+                grid-template-columns: repeat(3, 175px);
+                grid-template-rows: repeat(3, 175px);
             }
 
             @include lg{
-                grid-template-columns: repeat(3, 300px);
-                grid-template-rows: repeat(3, 300px);
+                grid-template-columns: repeat(3, 250px);
+                grid-template-rows: repeat(3, 250px);
             }
 
             li{
@@ -67,12 +67,12 @@
                 width: 100px;
                 height: 100px;
                 @include md{
-                    width: 200px;
-                    height: 200px;
+                    width: 175px;
+                    height: 175px;
                 }
                 @include lg{
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 250px;
                 }
 
                 h2{
@@ -96,12 +96,12 @@
                 width: 100px;
                 height: 100px;
                 @include md{
-                    width: 200px;
-                    height: 200px;
+                    width: 175px;
+                    height: 175px;
                 }
                 @include lg{
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 250px;
                 }
 
                 h2{
@@ -125,12 +125,12 @@
                 width: 100px;
                 height: 220px;
                 @include md{
-                    width: 200px;
-                    height: 420px;
+                    width: 175px;
+                    height: 370px;
                 }
                 @include lg{
-                    width: 300px;
-                    height: 620px;
+                    width: 250px;
+                    height: 520px;
                 }
 
                 h2{
@@ -154,12 +154,12 @@
                 width: 100px;
                 height: 220px;
                 @include md{
-                    width: 200px;
-                    height: 420px;
+                    width: 175px;
+                    height: 370px;
                 }
                 @include lg{
-                    width: 300px;
-                    height: 620px;
+                    width: 250px;
+                    height: 520px;
                 }
 
                 h2{
@@ -183,12 +183,12 @@
                 width: 100px;
                 height: 100px;
                 @include md{
-                    width: 200px;
-                    height: 200px;
+                    width: 175px;
+                    height: 175px;
                 }
                 @include lg{
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 250px;
                 }
 
                 h2{
@@ -212,12 +212,12 @@
                 width: 100px;
                 height: 100px;
                 @include md{
-                    width: 200px;
-                    height: 200px;
+                    width: 175px;
+                    height: 175px;
                 }
                 @include lg{
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 250px;
                 }
 
                 h2{
@@ -241,12 +241,12 @@
                 width: 100px;
                 height: 100px;
                 @include md{
-                    width: 200px;
-                    height: 200px;
+                    width: 175px;
+                    height: 175px;
                 }
                 @include lg{
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 250px;
                 }
 
                 h2{
