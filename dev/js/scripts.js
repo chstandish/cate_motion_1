@@ -25,13 +25,60 @@ function patternMotion(){
 
     tl.fromTo(".odd",{drawSVG: "0% 0%"}, {duration:3, drawSVG:"0% 100%", stagger:0.25, rotate:360, transformOrigin:"top left"},"spin")
     .fromTo(".even",{drawSVG:"0% 0%"}, {duration:3, drawSVG:"0% -100%", stagger:0.25, rotate:360, transformOrigin:"bottom right"},"spin");
-    return tl
+    return tl;
+
+}
+
+function uiMotion(){
+
+  var tl = gsap.timeline({repeat: 3});
+
+  tl.fromTo("#black", {fill:"rgba(255,255,255,0)", drawSVG:"75% 75%", y:0}, {duration: 0.75, drawSVG:"25% -75%"})
+  .to("#black", {duration:0.25, fill:"#000"})
+  .to("#black",{duration:1, y:-410})
+  .fromTo("#red", {fill:"rgba(255,255,255,0)", drawSVG:"75% 75%"}, {duration: 0.25, drawSVG:"25% -75%"})
+  .to("#red", {fill:"#C00000"})
+  .from("#redOrange", {duration:0.1, alpha:0})
+  .from("#yellowOrange", {duration:0.1, alpha:0})
+  .from("#yellow", {duration:0.1, alpha:0})
+  .from("#yellowGreen", {duration:0.1, alpha:0})
+  .from("#lightGreen", {duration:0.1, alpha:0})
+  .from("#green", {duration:0.1, alpha:0})
+  .from("#greenBlue", {duration:0.1, alpha:0})
+  .from("#teal", {duration:0.1, alpha:0})
+  .from("#lightBlue", {duration:0.1, alpha:0})
+  .from("#blue", {duration:0.1, alpha:0})
+  .from("#blueViolet", {duration:0.1, alpha:0})
+  .from("#violet", {duration:0.1, alpha:0})
+  .from("#lightViolet", {duration:0.1, alpha:0})
+  .from("#redViolet", {duration:0.1, alpha:0})
+  .from("#pink", {duration:0.1, alpha:0})
+  .to("#red", {duration:0.1, alpha:0})
+  .to("#redOrange", {duration:0.1, alpha:0})
+  .to("#yellowOrange", {duration:0.1, alpha:0})
+  .to("#yellow", {duration:0.1, alpha:0})
+  .to("#yellowGreen", {duration:0.1, alpha:0})
+  .to("#lightGreen", {duration:0.1, alpha:0})
+  .to("#green", {duration:0.1, alpha:0})
+  .to("#greenBlue", {duration:0.1, alpha:0})
+  .to("#teal", {duration:0.1, alpha:0})
+  .to("#lightBlue", {duration:0.1, alpha:0})
+  .to("#blue", {duration:0.1, alpha:0})
+  .to("#blueViolet", {duration:0.1, alpha:0})
+  .to("#violet", {duration:0.1, alpha:0})
+  .to("#lightViolet", {duration:0.1, alpha:0})
+  .to("#redViolet", {duration:0.1, alpha:0})
+  .to("#pink", {duration:0.1, alpha:0})
+  .from("#black", {duration:1, y:-410})
+  .fromTo("#black", {drawSVG:"25% -75%"}, {fill:"rgba(0,0,0,0)", drawSVG:"75% 75%"})
+  return tl;
 
 }
 
 var mainTL = gsap.timeline();
 mainTL.add(simpleMotion())
-.add(patternMotion());
+.add(patternMotion())
+.add(uiMotion());
 
 
 
