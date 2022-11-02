@@ -4,11 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Starting Template</title>
+    <title>Draw SVG</title>
 </head>
 
 <body>
+    <section id="drawSVG-container">
+        <div id="simple" class="drawSVG">
+            <div class="title">
+                <h1>Simple DrawSVG</h1>
+            </div>
+    
+            <div class="svg">
+    
+              <svg fill="none" viewBox="0 0 1440 1024">
+                <path fill="#fff" d="M0 0h1440v1024H0z"/>
+                <circle id="faceBackground" cx="720" cy="473" r="266" stroke="#F9D143" stroke-width="2" fill="#F9D143"/>
+                <ellipse id="leftEye" class="eyes" cx="644.5" cy="398.5" fill="#000" rx="35.5" ry="74.5"/>
+                <ellipse id="rightEye" class="eyes" cx="802" cy="398.5" fill="#000" rx="35" ry="74.5"/>
+                <path id="mouth" fill="#000" fill-rule="evenodd" d="M564.72 528.328h309.512c-.83 84.761-69.799 153.216-154.756 153.216S565.55 613.089 564.72 528.328Z" clip-rule="evenodd"/>
+                <path id="leftStar" stroke="#1D8BAE" stroke-width="2" fill="#1D8BAE" d="m162.5 399 24.36 74.972h78.83l-63.775 46.335 24.36 74.971-63.775-46.335-63.775 46.335 24.36-74.971-63.775-46.335h78.83L162.5 399Z"/>
+                <path id="rightStar" stroke="#1D8BAE" stroke-width="2" fill="#1D8BAE" d="m1277.5 399 24.36 74.972h78.83l-63.78 46.335 24.36 74.971-63.77-46.335-63.77 46.335 24.36-74.971-63.78-46.335h78.83L1277.5 399Z"/>
+              </svg>
+                
+            </div>
+        </div>
+    
+        <div id="pattern" class="drawSVG">
+            <div class="title">
+                <h1>Pattern DrawSVG</h1>
+            </div>
+    
+            <div class="svg">
+              <svg fill="none" viewBox="0 0 1440 1024">
+                <g clip-path="url(#clip0_2_19)">
+                  <path fill="#fff" d="M0 0h1440v1024H0z"/>
+                  <path id="starOne" class="odd" stroke="#000" stroke-width="3" d="m720 557.854.37 1.137.336 1.037h2.286l-.968.703-.881.64.337 1.037.369 1.137-.967-.703-.882-.64-.882.64-.967.703.369-1.137.337-1.037-.881-.64-.968-.703h2.286l.336-1.037.37-1.137Z"/>
+                  <path id="starTwo" class="even" stroke="#142400" stroke-width="3" d="m720 542.854 3.737 11.502.337 1.037h13.184l-9.784 7.108-.882.641.337 1.036 3.737 11.502-9.784-7.108-.882-.641-.882.641-9.784 7.108 3.737-11.502.337-1.036-.882-.641-9.784-7.108h13.184l.337-1.037L720 542.854Z"/>
+                  <path id="starThree" class="odd" stroke="#1C3200" stroke-width="3" d="m720 520.854 8.677 26.704.336 1.036h29.168l-22.715 16.504-.882.641.337 1.036 8.676 26.704-22.715-16.504-.882-.641-.882.641-22.715 16.504 8.676-26.704.337-1.036-.882-.641-22.715-16.504h29.168l.336-1.036L720 520.854Z"/>
+                  <path id="starFour" class="even" stroke="#223D00" stroke-width="3" d="m720 484.854 16.759 51.579.337 1.037h55.323l-43.876 31.877-.881.641.336 1.036 16.759 51.579-43.875-31.877-.882-.641-.882.641-43.875 31.877 16.759-51.579.336-1.036-.881-.641-43.876-31.877h55.323l.337-1.037L720 484.854Z"/>
+                  <path id="starFive" class="odd" stroke="#2B4E00" stroke-width="3" d="m720 443.854 25.964 79.909.337 1.037h85.111l-67.975 49.387-.881.64.337 1.037 25.964 79.909-67.975-49.387-.882-.64-.882.64-67.975 49.387 25.964-79.909.337-1.037-.881-.64-67.975-49.387h85.111l.337-1.037L720 443.854Z"/>
+                  <path id="starSix" class="even" stroke="#3B6900" stroke-width="3" d="m720 393.854 37.19 114.459.337 1.036h121.438l-97.364 70.739-.882.641.337 1.036 37.19 114.459-97.364-70.739-.882-.641-.882.641-97.364 70.739 37.19-114.459.337-1.036-.882-.641-97.364-70.739h121.438l.337-1.036L720 393.854Z"/>
+                  <path id="starSeven" class="odd" stroke="#4A8500" stroke-width="3" d="m720 336.854 49.987 153.845.337 1.036h162.851l-130.868 95.081-.881.641.337 1.036 49.987 153.845-130.868-95.081-.882-.641-.882.641-130.868 95.081 49.987-153.845.337-1.036-.881-.641-130.868-95.081h162.851l.337-1.036L720 336.854Z"/>
+                  <path id="starEight" class="even" stroke="#569900" stroke-width="3" d="m720 283.854 61.886 190.467.337 1.036h201.358l-162.02 117.715-.882.641.337 1.036 61.886 190.467-162.02-117.715-.882-.641-.882.641-162.02 117.715 61.886-190.467.337-1.036-.882-.641-162.02-117.715h201.358l.337-1.036L720 283.854Z"/>
+                  <path id="starNine" class="odd" stroke="#60AC00" stroke-width="3" d="m720 238.854 71.99 221.561.336 1.036h234.054L837.908 598.384l-.882.64.337 1.037 71.99 221.561-188.471-136.933-.882-.64-.882.64-188.471 136.933 71.99-221.561.337-1.037-.882-.64-188.471-136.933h234.053l.337-1.036L720 238.854Z"/>
+                  <path id="starTen" class="even" stroke="#6CC100" stroke-width="3" d="m720 188.854 83.215 256.11.337 1.037h270.378L856.072 604.285l-.882.641.337 1.036 83.215 256.11-217.86-158.284-.882-.641-.882.641-217.86 158.284 83.215-256.11.337-1.036-.882-.641-217.86-158.284h270.38l.337-1.037L720 188.854Z"/>
+                  <path id="starEleven" class="odd" stroke="#79D800" stroke-width="3" d="m720 142.854 93.543 287.895.337 1.037h303.8L872.782 609.715l-.882.64.337 1.037 93.543 287.895-244.898-177.929-.882-.64-.882.64L474.22 899.287l93.543-287.895.337-1.037-.882-.64L322.32 431.786h303.8l.337-1.037L720 142.854Z"/>
+                  <path id="starTwelve" class="even" stroke="#83EB00" stroke-width="3" d="m720 105.854 101.85 313.462.337 1.036h330.683l-266.647 193.73-.882.641.337 1.036 101.85 313.462-266.646-193.73-.882-.641-.882.641-266.646 193.73 101.85-313.462.337-1.036-.882-.641-266.646-193.73h330.682l.337-1.036L720 105.854Z"/>
+                  <path id="starThirteen" class="odd" stroke="#8FFF00" stroke-width="3" d="M720 71.854 829.483 408.81l.337 1.037h355.39L898.574 618.095l-.881.641.336 1.036 109.481 336.955-286.628-208.249-.882-.641-.882.641-286.631 208.249 109.484-336.955.336-1.036-.881-.641-286.631-208.249H610.18l.337-1.037L720 71.854Z"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_2_19">
+                    <path fill="#fff" d="M0 0h1440v1024H0z"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+        </div>
+    
+        <div id="ui" class="drawSVG">
+            <div class="title">
+                <h1>UI DrawSVG</h1>
+            </div>
+    
+            <div class="svg">
+              <svg fill="none" viewBox="0 0 1440 1024">
+                <path fill="#fff" d="M0 0h1440v1024H0z"/>
+                <circle id="black" cx="720" cy="512" r="46" fill="#000"/>
+                <circle id="red" cx="720" cy="102" r="46" fill="#C00000"/>
+                <circle id="redOrange" cx="874.686" cy="132.3" r="46" fill="#EA7000" transform="rotate(22.5 874.686 132.3)"/>
+                <circle id="yellowOrange" cx="1010.7" cy="222.87" r="46" fill="#EAA800" transform="rotate(45 1010.7 222.87)"/>
+                <circle id="yellow" cx="1098.21" cy="353.704" r="46" fill="#EAD200" transform="rotate(67.5 1098.21 353.704)"/>
+                <circle id="yellowGreen" cx="1130" cy="512" r="46" fill="#BEEE00"/>
+                <circle id="lightGreen" cx="1099.7" cy="666.686" r="46" fill="#9BE400" transform="rotate(22.5 1099.7 666.686)"/>
+                <circle id="green" cx="1009.13" cy="802.696" r="46" fill="#1ED600" transform="rotate(45 1009.13 802.696)"/>
+                <circle id="greenBlue" cx="878.296" cy="890.21" r="46" fill="#00D387" transform="rotate(67.5 878.296 890.21)"/>
+                <circle id="teal" cx="720" cy="922" r="46" fill="#00D3D3"/>
+                <circle id="lightBlue" cx="565.314" cy="891.7" r="46" fill="#00ADD3" transform="rotate(22.5 565.314 891.7)"/>
+                <circle id="blue" cx="429.304" cy="801.13" r="46" fill="#006ED3" transform="rotate(45 429.304 801.13)"/>
+                <circle id="blueViolet" cx="341.79" cy="670.296" r="46" fill="#4400D3" transform="rotate(67.5 341.79 670.296)"/>
+                <circle id="violet" cx="310" cy="512" r="46" fill="#7600D3"/>
+                <circle id="lightViolet" cx="340.3" cy="357.314" r="46" fill="#B600D3" transform="rotate(22.5 340.3 357.314)"/>
+                <circle id="redViolet" cx="430.87" cy="221.304" r="46" fill="#D30098" transform="rotate(45 430.87 221.304)"/>
+                <circle id="pink" cx="561.704" cy="133.79" r="46" fill="#D30059" transform="rotate(67.5 561.704 133.79)"/>
+              </svg>
+            </div>
+        </div>
+    </section>
     <script src="js/scripts-min.js"></script>
 </body>
 
