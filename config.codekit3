@@ -27,6 +27,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/logo-custom.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/logo-custom.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/pattern-animation.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -78,12 +88,12 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/drawSVG.kit" : {
+    "\/dev\/content\/logo-custom.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/drawSVG.html",
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/logo-custom.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -98,7 +108,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/head.html",
       "oF" : 0
     },
@@ -114,7 +124,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
@@ -968,7 +978,7 @@
         "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
-        "active" : 0,
+        "active" : 1,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {
