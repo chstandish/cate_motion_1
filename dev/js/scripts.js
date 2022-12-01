@@ -12,8 +12,8 @@ function wAnimation(){
   .fromTo("#left",{fill:"rgba(0,0,0,0", drawSVG: "0% 0%"}, {duration: 1, drawSVG:"0% 100%"}, "<0%")
   .fromTo("#right",{fill:"rgba(0,0,0,0", drawSVG: "54% 54%"}, {duration: 1, drawSVG:"54% -54%"}, "<0%")
   .from("#wFillEnd", {duration:1, morphSVG:"#wFillStart"})
-  .from("#leafLeft", {duration: 0.5, alpha:0, morphSVG:"#leafLeftStart"})
-  .from("#leafRight", {duration: 0.5, alpha:0, morphSVG:"#leafRightStart"}, "<0%");
+  .from("#leafLeft", {duration: 0.3, alpha:0, morphSVG:"#leafLeftStart"})
+  .from("#leafRight", {duration: 0.3, alpha:0, morphSVG:"#leafRightStart"}, "<0%");
   return tl;
 }
 
@@ -28,8 +28,8 @@ function dotAnimation(){
 
 function textAnimation(){
   var tl = gsap.timeline();
-  tl.from("#wag", {duration:1.5,transformOrigin: "425 450",rotate:180})
-  .from("#freeInst", {duration:1, alpha:0})
+  tl.from("#wag", {duration:1.3,transformOrigin: "425 450",rotate:180})
+  .from(".lowerText", {duration:0.1, stagger:0.05, alpha:0})
   return tl;
 }
 
