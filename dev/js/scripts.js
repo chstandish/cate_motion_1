@@ -12,6 +12,7 @@ function wAnimation(){
   .fromTo("#left",{fill:"rgba(0,0,0,0", drawSVG: "0% 0%"}, {duration: 1, drawSVG:"0% 100%"}, "<0%")
   .fromTo("#right",{fill:"rgba(0,0,0,0", drawSVG: "54% 54%"}, {duration: 1, drawSVG:"54% -54%"}, "<0%")
   .from("#wFillEnd", {duration:1, morphSVG:"#wFillStart"})
+  .from("#wMiddleEnd", {duration:1, morphSVG:"#wMiddleStart"}, "<0%")
   .from("#leafLeft", {duration: 0.3, alpha:0, morphSVG:"#leafLeftStart"})
   .from("#leafRight", {duration: 0.3, alpha:0, morphSVG:"#leafRightStart"}, "<0%");
   return tl;
