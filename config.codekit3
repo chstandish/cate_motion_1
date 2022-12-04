@@ -17,41 +17,11 @@
       "oAP" : "\/assets\/DrawSVG.fig",
       "oF" : 0
     },
-    "\/assets\/line-animation.svg" : {
+    "\/assets\/logo-found.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/assets\/line-animation.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/logo-custom.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/logo-custom.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/pattern-animation.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/pattern-animation.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/UI-animation.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/UI-animation.svg",
+      "oAP" : "\/assets\/logo-found.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -88,13 +58,13 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/logo-custom.kit" : {
+    "\/dev\/content\/logo-found.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/logo-custom.html",
-      "oF" : 1
+      "oAP" : "\/dev\/content\/logo-found.html",
+      "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -297,7 +267,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_drawSVG.scss" : {
+    "\/dev\/scss\/sections\/_logo-found.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -306,7 +276,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_drawSVG.css",
+      "oAP" : "\/dev\/scss\/sections\/_logo-found.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
